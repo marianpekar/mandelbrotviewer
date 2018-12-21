@@ -1,0 +1,25 @@
+{
+    "Screen" : {
+    "Width": 800,
+    "Height": 600,
+    "ZoomScale": 0.2
+    },
+
+    "Fractal": {
+    "Width": 800,
+    "Height": 600,
+    "MaxIterations": 1000,
+    "ColorRanges": [
+        { "Range": 0.0, "R": 0, "G": 0, "B": 0 },
+        { "Range": 0.3, "R": 66, "G": 161, "B": 244 }, 
+        { "Range": 0.5, "R": 244, "G": 229, "B": 66 }, 
+        { "Range": 0.6, "R": 244, "G": 152, "B": 66 }, 
+        { "Range": 1.0, "R": 244, "G": 66, "B": 66 }
+    ]
+    }
+}
+
+
+
+
+
