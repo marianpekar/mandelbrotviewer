@@ -21,7 +21,7 @@ void renderer(std::shared_ptr<Screen> screen, std::shared_ptr<ConfigLoader> conf
 	}
 
 	while (true) {
-		std::this_thread::sleep_for(std::chrono::microseconds(SLEEP_MILISECONDS));
+		std::this_thread::sleep_for(std::chrono::milliseconds(SLEEP_MILISECONDS));
 
 		if (draw) {
 			screen->update();
@@ -39,7 +39,7 @@ void fractalWorker(std::shared_ptr<Screen> screen, std::shared_ptr<ConfigLoader>
 	std::shared_ptr<Mandelbrot> mandelbrot(new Mandelbrot(configLoader->m_maxIterations));
 
 	while (true) {
-		std::this_thread::sleep_for(std::chrono::microseconds(SLEEP_MILISECONDS));
+		std::this_thread::sleep_for(std::chrono::milliseconds(SLEEP_MILISECONDS));
 
 		if (isFractalCalculated) {
 			draw = false;
